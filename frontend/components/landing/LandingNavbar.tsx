@@ -38,7 +38,7 @@ export function LandingNavbar() {
             <Shield className="w-5 h-5 text-blue-400" />
           </div>
           <span className="font-extrabold text-lg tracking-wide text-white">
-            Sentinel<span className="text-blue-500">AI</span>
+            Vigi<span className="text-blue-500">Locus</span>
           </span>
         </Link>
 

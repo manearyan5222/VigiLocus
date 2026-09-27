@@ -14,36 +14,34 @@ export function LandingCTASection() {
 
       <div className="max-w-4xl mx-auto px-6 sm:px-8 relative z-10 text-center space-y-8">
         
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-white/10 text-slate-300 font-mono text-xs shadow-sm">
-          <Shield className="w-3.5 h-3.5 text-blue-400" />
-          <span>READY FOR DEPLOYMENT</span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-red-500/30 text-slate-300 font-mono text-xs shadow-sm">
+          <Shield className="w-3.5 h-3.5 text-red-400" />
+          <span className="text-red-400 font-bold">READY TO PROTECT YOUR PROPERTY</span>
         </div>
 
         <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
-          Make every camera <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-slate-200 bg-clip-text text-transparent">smarter.</span>
+          Stop property theft <span className="bg-gradient-to-r from-red-500 via-amber-400 to-emerald-400 bg-clip-text text-transparent">before it happens.</span>
         </h2>
 
         <p className="text-slate-300 text-base sm:text-xl leading-relaxed max-w-2xl mx-auto">
-          Turn passive CCTV footage into actionable security awareness with real-time risk scoring, 5-second triage, and human-in-the-loop control.
+          Turn passive CCTV camera feeds into active 24/7 theft prevention with real-time threat detection, 5-second operator alert triage, and evidence recording.
         </p>
 
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/dashboard"
-            className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl font-bold text-sm tracking-wide flex items-center justify-center gap-3 shadow-xl shadow-blue-600/20 transition-all hover:scale-[1.01] active:scale-[0.99]"
+            className="w-full sm:w-auto px-8 py-4 bg-red-600 hover:bg-red-500 text-white rounded-2xl font-bold text-sm tracking-wide flex items-center justify-center gap-3 shadow-xl shadow-red-600/20 transition-all hover:scale-[1.01] active:scale-[0.99]"
           >
-            <span>Open Dashboard</span>
+            <span>Launch CCTV Live Dashboard</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
 
-          <a
-            href="https://github.com/manearyan5222/sentinel-ai"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/cameras"
             className="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 border border-white/10 text-slate-200 rounded-2xl font-semibold text-sm tracking-wide flex items-center justify-center gap-2 transition-colors"
           >
-            <span>View Source on GitHub</span>
-          </a>
+            <span>Manage Connected Cameras</span>
+          </Link>
         </div>
 
       </div>

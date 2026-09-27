@@ -93,10 +93,10 @@ export default function SOCOverviewDashboard() {
             </div>
             <div>
               <h2 className="text-base font-bold text-white tracking-wide">
-                Security Operations Center — Master Overview
+                CCTV Live Feed Dashboard — Theft & Intrusion Control Room
               </h2>
               <p className="text-xs text-slate-400">
-                Live contextual security alerting, multi-camera tracking & human-in-the-loop decision triage.
+                Real-time CCTV stream tracking, AI theft/vandalism detection, and instant 5-second operator response triage.
               </p>
             </div>
           </div>

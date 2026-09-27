@@ -9,7 +9,7 @@ load_dotenv()
 logger = logging.getLogger("sentinel.config")
 
 class Settings:
-    PROJECT_NAME: str = "SentinelAI CCTV Incident Intelligence Platform"
+    PROJECT_NAME: str = "VigiLocus CCTV Incident Intelligence Platform"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./sentinel_ai.db")

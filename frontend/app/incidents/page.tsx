@@ -88,10 +88,10 @@ export default function IncidentsPage() {
             </div>
             <div>
               <h2 className="text-base font-bold text-white tracking-wide">
-                Security Incident Management & Audit Timelines
+                Theft & Intrusion Incident Log — Evidence & Audit Center
               </h2>
               <p className="text-xs text-slate-400">
-                End-to-end incident lifecycle: Detection → Zone Breach → Risk Evaluation → Guard Investigation → Resolution.
+                Searchable theft incident history: AI Detection → Spatial Zone Breach → Video Evidence → Officer Action → Police Submission.
               </p>
             </div>
           </div>

@@ -45,7 +45,7 @@ export function LandingRiskSection() {
             <span className="text-blue-400 font-extrabold">Contextual Risk Engine.</span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            SentinelAI does not use black-box magic. Every alert risk score is computed deterministically from transparent spatial, temporal, and credential rules.
+            VigiLocus does not use black-box magic. Every alert risk score is computed deterministically from transparent spatial, temporal, and credential rules.
           </p>
         </div>
 

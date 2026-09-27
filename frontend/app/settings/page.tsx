@@ -161,7 +161,7 @@ export default function SettingsPage() {
                   1. HUMAN-IN-THE-LOOP MANDATE
                 </span>
                 <p>
-                  SentinelAI operates strictly as a decision-support platform. The AI highlights contextual anomalies and elevated risk events; human security personnel make all final assessment and resolution decisions.
+                  VigiLocus operates strictly as a decision-support platform. The AI highlights contextual anomalies and elevated risk events; human security personnel make all final assessment and resolution decisions.
                 </p>
               </div>
 

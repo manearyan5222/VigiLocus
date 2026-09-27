@@ -56,7 +56,7 @@ export default function LoginPage() {
             <Shield className="w-6 h-6 animate-pulse" />
           </div>
           <h1 className="text-2xl font-black text-white tracking-wider uppercase">
-            Sentinel<span className="text-blue-500">AI</span> SOC
+            Vigi<span className="text-blue-500">Locus</span> SOC
           </h1>
           <p className="text-xs text-slate-400">
             Security Operations Center Operator Portal

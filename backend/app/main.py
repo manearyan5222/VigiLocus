@@ -12,7 +12,7 @@ app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
     openapi_url=f"{settings.API_V1_STR}/openapi.json",
-    description="SentinelAI — AI-Powered CCTV Security Awareness & Incident Intelligence Platform."
+    description="VigiLocus — AI-Powered CCTV Security Awareness & Incident Intelligence Platform."
 )
 
 # Configure CORS based on operational mode (SEC-L02)

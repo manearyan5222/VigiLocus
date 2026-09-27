@@ -140,10 +140,10 @@ export default function CamerasPage() {
             </div>
             <div>
               <h2 className="text-base font-bold text-white tracking-wide">
-                Camera Configuration & Spatial Zone Management
+                Security Camera Stream & Theft Detection Setup
               </h2>
               <p className="text-xs text-slate-400">
-                Configure RTSP / Webcam streams, define spatial polygon zones & enforce boundary security rules.
+                Connect security cameras (RTSP/IP/Webcam), test stream connections, configure theft detection sensitivity, and set up spatial perimeter zones.
               </p>
             </div>
           </div>

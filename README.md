@@ -1,10 +1,10 @@
-# 🛡️ SentinelAI — CCTV Security Awareness & Incident Intelligence Platform
+# 🛡️ VigiLocus — Autonomous AI Agents for Physical Security & Camera Triage
 
 > **Transform raw CCTV video into explainable, contextual security intelligence that empowers human security teams to investigate incidents 10x faster.**
 
 <div align="center">
 
-[![Live Web App](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://sentinel-ai-app-olive.vercel.app)
+[![Live Web App](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/)
 [![Live Backend API](https://img.shields.io/badge/Backend%20API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://sentinel-ai-vnm8.onrender.com)
 [![Swagger API Docs](https://img.shields.io/badge/API%20Docs-Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://sentinel-ai-vnm8.onrender.com/docs)
 [![CI Pipeline](https://img.shields.io/badge/CI%20Pipeline-Passing-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/manearyan5222/sentinel-ai/actions)
@@ -22,14 +22,14 @@
 
 ## 🌐 Live Production Links
 
-Experience SentinelAI live on the public cloud:
+Experience VigiLocus live on the public cloud:
 
 | Service | Public URL | Description |
 | :--- | :--- | :--- |
-| 🚀 **Live Web Application** | **[https://sentinel-ai-app-olive.vercel.app](https://sentinel-ai-app-olive.vercel.app)** | Production Next.js 14 SOC dashboard & landing page |
-| 📊 **SOC Overview Command Center** | **[https://sentinel-ai-app-olive.vercel.app/dashboard](https://sentinel-ai-app-olive.vercel.app/dashboard)** | Real-time SOC overview, live KPI cards, and critical alerts |
-| 📹 **Multi-Camera Monitoring Grid** | **[https://sentinel-ai-app-olive.vercel.app/monitoring](https://sentinel-ai-app-olive.vercel.app/monitoring)** | Live multi-stream CCTV grid with FPS counters & fullscreen views |
-| 🚨 **5-Second Alert Triage Center** | **[https://sentinel-ai-app-olive.vercel.app/alerts](https://sentinel-ai-app-olive.vercel.app/alerts)** | Explainable 5-second alert triage cards & incident actions |
+| 🚀 **Live Web Application** | **[https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app](https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/)** | Production Next.js 14 SOC dashboard & landing page |
+| 📊 **SOC Overview Command Center** | **[https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/dashboard](https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/dashboard)** | Real-time SOC overview, live KPI cards, and critical alerts |
+| 📹 **Multi-Camera Monitoring Grid** | **[https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/monitoring](https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/monitoring)** | Live multi-stream CCTV grid with FPS counters & fullscreen views |
+| 🚨 **5-Second Alert Triage Center** | **[https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/alerts](https://vigilocus-996h6xgn7-manearyan5222s-projects.vercel.app/alerts)** | Explainable 5-second alert triage cards & incident actions |
 | ⚡ **Live Backend API (Render)** | **[https://sentinel-ai-vnm8.onrender.com](https://sentinel-ai-vnm8.onrender.com)** | High-performance Python FastAPI intelligence server |
 | 📖 **Interactive OpenAPI Documentation** | **[https://sentinel-ai-vnm8.onrender.com/docs](https://sentinel-ai-vnm8.onrender.com/docs)** | Interactive Swagger UI API testing & schemas |
 
@@ -37,9 +37,9 @@ Experience SentinelAI live on the public cloud:
 
 ## 📌 Executive Overview
 
-**SentinelAI** is a production-grade Security Operations Center (SOC) intelligence platform engineered for residential communities, educational campuses, and commercial perimeters. 
+**VigiLocus** is a production-grade Security Operations Center (SOC) intelligence platform engineered for residential communities, educational campuses, and commercial perimeters. 
 
-Traditional video surveillance systems inundate security operators with thousands of false-positive motion alerts from trees, animals, and authorized foot traffic. SentinelAI solves security fatigue by evaluating computer-vision detections through a **deterministic 0–100 contextual risk engine**, a **spatial polygon boundary model**, and a **5-Second UX Alert Protocol** that presents human security officers with clear, actionable decision support.
+Traditional video surveillance systems inundate security operators with thousands of false-positive motion alerts from trees, animals, and authorized foot traffic. VigiLocus solves security fatigue by evaluating computer-vision detections through a **deterministic 0–100 contextual risk engine**, a **spatial polygon boundary model**, and a **5-Second UX Alert Protocol** that presents human security officers with clear, actionable decision support.
 
 ```
                   ┌─────────────────────────────────────────┐

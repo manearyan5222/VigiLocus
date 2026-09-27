@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'SentinelAI | Smarter CCTV. Faster Security Response.',
+  title: 'VigiLocus | Smarter CCTV. Faster Security Response.',
   description: 'Real-time AI-powered residential security CCTV monitoring, contextual risk scoring, and guard alert triage platform.',
 };
 

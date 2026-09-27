@@ -32,10 +32,10 @@ export function LandingHero() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-white/10 text-slate-300 text-xs font-mono tracking-wide shadow-sm"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-red-500/30 text-slate-300 text-xs font-mono tracking-wide shadow-sm"
           >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>INTELLIGENT CCTV SECURITY LAYER</span>
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+            <span className="text-red-400 font-bold">VIGILOCUS :: AI THEFT PREVENTION & CCTV MONITORING</span>
           </motion.div>
         </div>
 
@@ -47,8 +47,8 @@ export function LandingHero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.06]"
           >
-            See threats before <br className="hidden sm:inline" />
-            they become <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-slate-200 bg-clip-text text-transparent">incidents.</span>
+            Real-Time Theft Prevention <br className="hidden sm:inline" />
+            Through <span className="bg-gradient-to-r from-red-500 via-amber-400 to-emerald-400 bg-clip-text text-transparent">AI CCTV Monitoring.</span>
           </motion.h1>
 
           <motion.p
@@ -57,7 +57,8 @@ export function LandingHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-3xl mx-auto"
           >
-            SentinelAI turns everyday CCTV into intelligent security awareness — detecting unusual activity, understanding context, and helping teams respond faster.
+            <strong className="text-white font-semibold">Detect threats. Prevent crime. Protect what matters.</strong><br />
+            Property crimes cost thousands annually. CCTV alone isn&apos;t enough. VigiLocus detects suspicious activity (theft, trespassing, vandalism) in real time and alerts security operators instantly.
           </motion.p>
 
           {/* Action CTAs - Primary CTA Visually Dominant */}
@@ -69,19 +70,19 @@ export function LandingHero() {
           >
             <Link
               href="/dashboard"
-              className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold text-sm tracking-wide flex items-center justify-center gap-3 shadow-lg shadow-blue-600/30 transition-all hover:scale-[1.02] active:scale-[0.98] border border-blue-500/40"
+              className="w-full sm:w-auto px-8 py-4 bg-red-600 hover:bg-red-500 text-white rounded-xl font-bold text-sm tracking-wide flex items-center justify-center gap-3 shadow-lg shadow-red-600/30 transition-all hover:scale-[1.02] active:scale-[0.98] border border-red-500/40"
             >
-              <span>Explore Security Dashboard</span>
+              <span>Launch CCTV Live Dashboard</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
 
-            <a
-              href="#see-threats"
+            <Link
+              href="/cameras"
               className="w-full sm:w-auto px-8 py-4 bg-slate-900/90 hover:bg-slate-800 border border-white/10 text-slate-300 rounded-xl font-semibold text-sm tracking-wide flex items-center justify-center gap-2 transition-colors"
             >
               <Eye className="w-4 h-4 text-slate-400" />
-              <span>How SentinelAI Works</span>
-            </a>
+              <span>Connect Security Cameras</span>
+            </Link>
           </motion.div>
         </div>
 
@@ -101,7 +102,7 @@ export function LandingHero() {
                 <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
                 <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
                 <span className="ml-2 text-slate-300 font-semibold hidden sm:inline">
-                  SENTINELAI :: LIVE RECOGNITION CANVAS
+                  VIGILOCUS :: LIVE RECOGNITION CANVAS
                 </span>
               </div>
               <div className="flex items-center gap-3 text-[11px]">

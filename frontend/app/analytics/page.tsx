@@ -32,10 +32,10 @@ export default function AnalyticsPage() {
           </div>
           <div>
             <h2 className="text-base font-bold tracking-wide text-slate-100">
-              Security Operations Analytics & Risk Intelligence
+              Theft Threat Analytics & Property Hotspot Intelligence
             </h2>
             <p className="text-xs text-slate-400">
-              Real-time statistical breakdown of alert frequency, risk distributions, camera performance, and guard response speeds.
+              Real-time statistical breakdown of theft hotspots, crime trend graphs, peak incident hours, camera performance, and estimated thefts prevented.
             </p>
           </div>
         </div>
