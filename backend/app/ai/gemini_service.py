@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import Dict, Any, Optional
 from app.config import settings
 from app.ai.ai_prompts import (
-    SENTINEL_SYSTEM_INSTRUCTION,
+    VIGILOCUS_SYSTEM_INSTRUCTION,
     build_alert_explanation_prompt,
     build_ai_chat_prompt,
     build_incident_summary_prompt
@@ -16,7 +16,7 @@ from app.ai.ai_schemas import (
     IncidentSummarySchema
 )
 
-logger = logging.getLogger("sentinel.gemini")
+logger = logging.getLogger("vigilocus.gemini")
 
 class GeminiService:
     def __init__(self):
@@ -85,7 +85,7 @@ class GeminiService:
                     model='gemini-2.5-flash',
                     contents=prompt,
                     config={
-                        'system_instruction': SENTINEL_SYSTEM_INSTRUCTION,
+                        'system_instruction': VIGILOCUS_SYSTEM_INSTRUCTION,
                         'response_mime_type': 'application/json',
                     }
                 )
@@ -95,7 +95,7 @@ class GeminiService:
             elif hasattr(self.client, 'GenerativeModel'):
                 model = self.client.GenerativeModel(
                     'gemini-1.5-flash',
-                    system_instruction=SENTINEL_SYSTEM_INSTRUCTION
+                    system_instruction=VIGILOCUS_SYSTEM_INSTRUCTION
                 )
                 response = model.generate_content(prompt)
                 return response.text
@@ -106,7 +106,7 @@ class GeminiService:
                 url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.api_key}"
                 data = {
                     "contents": [{"parts": [{"text": prompt}]}],
-                    "systemInstruction": {"parts": [{"text": SENTINEL_SYSTEM_INSTRUCTION}]},
+                    "systemInstruction": {"parts": [{"text": VIGILOCUS_SYSTEM_INSTRUCTION}]},
                     "generationConfig": {"responseMimeType": "application/json"}
                 }
                 req = urllib.request.Request(

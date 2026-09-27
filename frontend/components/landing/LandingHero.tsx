@@ -60,7 +60,7 @@ export function LandingHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-xl text-slate-300 font-normal leading-relaxed max-w-3xl mx-auto"
           >
-            SentinelAI deploys autonomous computer vision & reasoning agents that monitor multi-stream CCTV grids, explain threats in 5 seconds, and eliminate false alarm fatigue.
+            VigiLocus deploys autonomous computer vision & reasoning agents that monitor multi-stream CCTV grids, explain threats in 5 seconds, and eliminate false alarm fatigue.
           </motion.p>
 
           {/* Action CTAs - Primary CTA Visually Dominant */}
@@ -105,7 +105,7 @@ export function LandingHero() {
                 <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
                 <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
                 <span className="ml-2 text-slate-300 font-semibold hidden sm:inline">
-                  SENTINELAI :: LIVE RECOGNITION CANVAS
+                  VIGILOCUS :: LIVE RECOGNITION CANVAS
                 </span>
               </div>
               <div className="flex items-center gap-3 text-[11px]">

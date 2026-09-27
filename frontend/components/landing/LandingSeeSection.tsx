@@ -18,10 +18,10 @@ export function LandingSeeSection() {
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             Your cameras see everything. <br />
-            <span className="text-blue-400 font-extrabold">SentinelAI helps you understand it.</span>
+            <span className="text-blue-400 font-extrabold">VigiLocus helps you understand it.</span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Existing residential security systems record terabytes of unread video. SentinelAI turns raw CCTV camera feeds into real-time, structured spatial intelligence without changing your existing cameras.
+            Existing residential security systems record terabytes of unread video. VigiLocus turns raw CCTV camera feeds into real-time, structured spatial intelligence without changing your existing cameras.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export function LandingSeeSection() {
               </div>
               <h3 className="text-base font-bold text-white">Multi-Camera Simultaneous Analysis</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Connect RTSP, webcam, or video feeds. SentinelAI tracks entities simultaneously across perimeter fences, main gates, lobbies, and amenity zones.
+                Connect RTSP, webcam, or video feeds. VigiLocus tracks entities simultaneously across perimeter fences, main gates, lobbies, and amenity zones.
               </p>
             </div>
 
@@ -57,7 +57,7 @@ export function LandingSeeSection() {
               </div>
               <h3 className="text-base font-bold text-white">Restricted Zone Boundaries</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Define restricted polygon zones. SentinelAI instantly flags unauthorized boundary crossings while ignoring normal traffic in authorized sectors.
+                Define restricted polygon zones. VigiLocus instantly flags unauthorized boundary crossings while ignoring normal traffic in authorized sectors.
               </p>
             </div>
 

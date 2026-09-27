@@ -42,7 +42,7 @@ def create_demo_video(output_path="sample_data/demo_security.mp4", duration_sec=
 
         # On-screen CCTV timestamp & Watermark
         cv2.putText(frame, f"CAM-02 PERIMETER SOUTH | FRAME #{i:04d}", (30, 40), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 200), 2)
-        cv2.putText(frame, "SENTINEL-AI CV ENGINE DEMO FEED", (30, 680), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (120, 140, 160), 1)
+        cv2.putText(frame, "VIGILOCUS CV ENGINE DEMO FEED", (30, 680), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (120, 140, 160), 1)
 
         out.write(frame)
 

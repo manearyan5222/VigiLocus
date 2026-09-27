@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 # Load environment variables from .env file if present
 load_dotenv()
 
-logger = logging.getLogger("sentinel.config")
+logger = logging.getLogger("vigilocus.config")
 
 class Settings:
-    PROJECT_NAME: str = "SentinelAI CCTV Incident Intelligence Platform"
+    PROJECT_NAME: str = "VigiLocus CCTV Incident Intelligence Platform"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./sentinel_ai.db")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./vigilocus.db")
     SAMPLE_VIDEO_PATH: str = os.getenv("SAMPLE_VIDEO_PATH", "../sample_data/demo_security.mp4")
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     
@@ -27,7 +27,7 @@ class Settings:
         if self._raw_secret_key:
             return self._raw_secret_key
         if self.DEMO_MODE:
-            return "sentinel-demo-secret-key-do-not-use-in-production"
+            return "vigilocus-demo-secret-key-do-not-use-in-production"
         raise RuntimeError(
             "CRITICAL SECURITY CONFIGURATION ERROR: SECRET_KEY environment variable "
             "must be explicitly configured when DEMO_MODE is disabled."

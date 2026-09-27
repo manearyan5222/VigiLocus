@@ -21,7 +21,7 @@ export function LandingDetectSection() {
             Detection is only <span className="bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent font-extrabold">the beginning.</span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Legacy AI motion sensors spam security teams every time a tree sways or a resident walks their dog. SentinelAI combines vision with real-time spatial, temporal, and identity context.
+            Legacy AI motion sensors spam security teams every time a tree sways or a resident walks their dog. VigiLocus combines vision with real-time spatial, temporal, and identity context.
           </p>
 
           {/* Minimal Interactive View Selector */}
@@ -55,7 +55,7 @@ export function LandingDetectSection() {
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
-                Sentinel Context Engine
+                VigiLocus Context Engine
               </button>
             </div>
           </div>
@@ -102,7 +102,7 @@ export function LandingDetectSection() {
             </motion.div>
           )}
 
-          {/* SentinelAI Contextual Intelligence Card */}
+          {/* VigiLocus Contextual Intelligence Card */}
           {(activeView === 'comparison' || activeView === 'sentinel') && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -114,7 +114,7 @@ export function LandingDetectSection() {
               <div className="flex items-center justify-between border-b border-white/[0.06] pb-4">
                 <div className="flex items-center gap-2 text-white font-bold text-sm">
                   <Check className="w-4 h-4 text-emerald-400" />
-                  <span>SentinelAI Context Engine</span>
+                  <span>VigiLocus Context Engine</span>
                 </div>
                 <span className="text-[10px] font-mono px-2.5 py-0.5 rounded bg-blue-950 text-blue-300 border border-blue-800/60 font-medium">
                   CONTEXTUAL ALERTING

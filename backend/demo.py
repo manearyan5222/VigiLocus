@@ -19,7 +19,7 @@ from app.ai.gemini_service import gemini_service
 
 def run_demo_scenario():
     print("=" * 72)
-    print("      SENTINEL AI — END-TO-END SECURITY INCIDENT REPRODUCIBLE DEMO")
+    print("      VIGILOCUS — END-TO-END SECURITY INCIDENT REPRODUCIBLE DEMO")
     print("=" * 72)
     print("Scenario: Unrecognized person enters restricted South Perimeter Boundary\n")
 

@@ -1,5 +1,5 @@
 /**
- * SENTINEL AI - VANILLA JAVASCRIPT ENGINE WITH GEMINI AI INTEGRATION
+ * VIGILOCUS - VANILLA JAVASCRIPT ENGINE WITH GEMINI AI INTEGRATION
  * Handles Live CCTV Canvas Simulation, Real-Time Alerts, 5-Second UX Triage Modal,
  * Gemini AI Analysis, AI Chat Assistant Drawer, Visitor Directory, and Analytics.
  */

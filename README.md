@@ -1,12 +1,12 @@
-# 🛡️ SentinelAI — CCTV Security Awareness & Incident Intelligence Platform
+# 🛡️ VigiLocus — CCTV Security Awareness & Incident Intelligence Platform
 
 > **Transform raw CCTV video into explainable, contextual security intelligence that empowers human security teams to investigate incidents 10x faster.**
 
 <div align="center">
 
-[![Live Web App](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://sentinel-ai-app-olive.vercel.app)
-[![Live Backend API](https://img.shields.io/badge/Backend%20API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://sentinel-ai-vnm8.onrender.com)
-[![Swagger API Docs](https://img.shields.io/badge/API%20Docs-Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://sentinel-ai-vnm8.onrender.com/docs)
+[![Live Web App](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://vigilocus-app-olive.vercel.app)
+[![Live Backend API](https://img.shields.io/badge/Backend%20API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://vigilocus-vnm8.onrender.com)
+[![Swagger API Docs](https://img.shields.io/badge/API%20Docs-Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://vigilocus-vnm8.onrender.com/docs)
 [![CI Pipeline](https://img.shields.io/badge/CI%20Pipeline-Passing-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/manearyan5222/sentinel-ai/actions)
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -22,24 +22,24 @@
 
 ## 🌐 Live Production Links
 
-Experience SentinelAI live on the public cloud:
+Experience VigiLocus live on the public cloud:
 
 | Service | Public URL | Description |
 | :--- | :--- | :--- |
-| 🚀 **Live Web Application** | **[https://sentinel-ai-app-olive.vercel.app](https://sentinel-ai-app-olive.vercel.app)** | Production Next.js 14 SOC dashboard & landing page |
-| 📊 **SOC Overview Command Center** | **[https://sentinel-ai-app-olive.vercel.app/dashboard](https://sentinel-ai-app-olive.vercel.app/dashboard)** | Real-time SOC overview, live KPI cards, and critical alerts |
-| 📹 **Multi-Camera Monitoring Grid** | **[https://sentinel-ai-app-olive.vercel.app/monitoring](https://sentinel-ai-app-olive.vercel.app/monitoring)** | Live multi-stream CCTV grid with FPS counters & fullscreen views |
-| 🚨 **5-Second Alert Triage Center** | **[https://sentinel-ai-app-olive.vercel.app/alerts](https://sentinel-ai-app-olive.vercel.app/alerts)** | Explainable 5-second alert triage cards & incident actions |
-| ⚡ **Live Backend API (Render)** | **[https://sentinel-ai-vnm8.onrender.com](https://sentinel-ai-vnm8.onrender.com)** | High-performance Python FastAPI intelligence server |
-| 📖 **Interactive OpenAPI Documentation** | **[https://sentinel-ai-vnm8.onrender.com/docs](https://sentinel-ai-vnm8.onrender.com/docs)** | Interactive Swagger UI API testing & schemas |
+| 🚀 **Live Web Application** | **[https://vigilocus-app-olive.vercel.app](https://vigilocus-app-olive.vercel.app)** | Production Next.js 14 SOC dashboard & landing page |
+| 📊 **SOC Overview Command Center** | **[https://vigilocus-app-olive.vercel.app/dashboard](https://vigilocus-app-olive.vercel.app/dashboard)** | Real-time SOC overview, live KPI cards, and critical alerts |
+| 📹 **Multi-Camera Monitoring Grid** | **[https://vigilocus-app-olive.vercel.app/monitoring](https://vigilocus-app-olive.vercel.app/monitoring)** | Live multi-stream CCTV grid with FPS counters & fullscreen views |
+| 🚨 **5-Second Alert Triage Center** | **[https://vigilocus-app-olive.vercel.app/alerts](https://vigilocus-app-olive.vercel.app/alerts)** | Explainable 5-second alert triage cards & incident actions |
+| ⚡ **Live Backend API (Render)** | **[https://vigilocus-vnm8.onrender.com](https://vigilocus-vnm8.onrender.com)** | High-performance Python FastAPI intelligence server |
+| 📖 **Interactive OpenAPI Documentation** | **[https://vigilocus-vnm8.onrender.com/docs](https://vigilocus-vnm8.onrender.com/docs)** | Interactive Swagger UI API testing & schemas |
 
 ---
 
 ## 📌 Executive Overview
 
-**SentinelAI** is a production-grade Security Operations Center (SOC) intelligence platform engineered for residential communities, educational campuses, and commercial perimeters. 
+**VigiLocus** is a production-grade Security Operations Center (SOC) intelligence platform engineered for residential communities, educational campuses, and commercial perimeters. 
 
-Traditional video surveillance systems inundate security operators with thousands of false-positive motion alerts from trees, animals, and authorized foot traffic. SentinelAI solves security fatigue by evaluating computer-vision detections through a **deterministic 0–100 contextual risk engine**, a **spatial polygon boundary model**, and a **5-Second UX Alert Protocol** that presents human security officers with clear, actionable decision support.
+Traditional video surveillance systems inundate security operators with thousands of false-positive motion alerts from trees, animals, and authorized foot traffic. VigiLocus solves security fatigue by evaluating computer-vision detections through a **deterministic 0–100 contextual risk engine**, a **spatial polygon boundary model**, and a **5-Second UX Alert Protocol** that presents human security officers with clear, actionable decision support.
 
 ```
                   ┌─────────────────────────────────────────┐
@@ -103,7 +103,7 @@ Traditional video surveillance systems inundate security operators with thousand
 
 ## 🎯 5-Second UX Alert Protocol
 
-When elevated risk is detected, security guards cannot afford to scrub through 10-minute video files. SentinelAI presents standardized, scannable alert triage cards answering 6 fundamental questions:
+When elevated risk is detected, security guards cannot afford to scrub through 10-minute video files. VigiLocus presents standardized, scannable alert triage cards answering 6 fundamental questions:
 
 | Pillar | Description | Example Output |
 | :--- | :--- | :--- |
@@ -206,7 +206,7 @@ backend\venv\Scripts\python.exe backend/demo.py
 ## 🛡️ Privacy, Safety & Production Security Framework
 
 > **IMPORTANT DISCLAIMER**  
-> SentinelAI is a security-awareness and decision-support platform designed to assist authorized human security personnel. The system **does not determine criminal intent or guilt**, and **never autonomously classifies individuals as dangerous or criminal**. Alerts represent contextual indicators of elevated operational risk and must be reviewed by human operators before any action is taken.
+> VigiLocus is a security-awareness and decision-support platform designed to assist authorized human security personnel. The system **does not determine criminal intent or guilt**, and **never autonomously classifies individuals as dangerous or criminal**. Alerts represent contextual indicators of elevated operational risk and must be reviewed by human operators before any action is taken.
 
 * **Human-in-the-Loop**: AI flags contextual anomalies; human officers make all final assessment decisions.
 * **Local Processing**: Video feeds are processed locally on-premise and never transmitted to external clouds.
@@ -218,7 +218,7 @@ When transitioning from the demonstration environment to a production SOC deploy
 
 1. **Disable Demo Mode**: Set `DEMO_MODE=false` in `backend/.env`.
 2. **Configure JWT Secret**: Generate and provide a cryptographically secure 32+ character string for `SECRET_KEY`. When `DEMO_MODE=false`, the server strictly refuses to start if `SECRET_KEY` is omitted.
-3. **Lock Down CORS**: Specify trusted frontend domain origins in `CORS_ORIGINS` (e.g. `https://sentinel-ai-app-olive.vercel.app`).
+3. **Lock Down CORS**: Specify trusted frontend domain origins in `CORS_ORIGINS` (e.g. `https://vigilocus-app-olive.vercel.app`).
 4. **WebSocket & SSRF Protection**: All WebSocket channels require valid JWT authentication query tokens (`/ws/alerts?token=...`), and camera source URLs are filtered against intranet loopback/link-local SSRF vectors.
 
 ---

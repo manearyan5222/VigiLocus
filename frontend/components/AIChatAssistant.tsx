@@ -13,7 +13,7 @@ export function AIChatAssistant() {
     {
       id: 'welcome',
       sender: 'assistant',
-      text: 'Hello Guard. I am your SentinelAI Security Assistant. Ask me to summarize active alerts, query specific cameras, or check resident activity.',
+      text: 'Hello Guard. I am your VigiLocus Security Assistant. Ask me to summarize active alerts, query specific cameras, or check resident activity.',
       timestamp: new Date().toLocaleTimeString(),
     },
   ]);
@@ -84,7 +84,7 @@ export function AIChatAssistant() {
               </div>
               <div>
                 <h3 className="font-bold text-xs text-purple-100 uppercase tracking-wide">
-                  SentinelAI SOC Assistant
+                  VigiLocus SOC Assistant
                 </h3>
                 <span className="text-[10px] text-purple-300 block leading-none">
                   Read-Only Database Intelligence
@@ -129,7 +129,7 @@ export function AIChatAssistant() {
             {isLoading && (
               <div className="flex items-center gap-2 text-purple-400 font-mono text-[11px]">
                 <Sparkles className="w-3.5 h-3.5 animate-spin" />
-                <span>Querying SentinelAI event logs...</span>
+                <span>Querying VigiLocus event logs...</span>
               </div>
             )}
           </div>

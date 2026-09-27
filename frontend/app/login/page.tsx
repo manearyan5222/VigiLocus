@@ -26,8 +26,8 @@ export default function LoginPage() {
 
       if (res.ok) {
         const data = await res.json();
-        localStorage.setItem('sentinel_token', data.access_token);
-        localStorage.setItem('sentinel_user', JSON.stringify(data.user));
+        localStorage.setItem('vigilocus_token', data.access_token);
+        localStorage.setItem('vigilocus_user', JSON.stringify(data.user));
         router.push('/dashboard');
       } else {
         const errData = await res.json().catch(() => ({}));
@@ -36,7 +36,7 @@ export default function LoginPage() {
     } catch {
       // Local fallback for standalone demo mode
       if ((username === 'guard' && password === 'guard123') || (username === 'admin' && password === 'admin123')) {
-        localStorage.setItem('sentinel_user', JSON.stringify({ username, role: username.toUpperCase() }));
+        localStorage.setItem('vigilocus_user', JSON.stringify({ username, role: username.toUpperCase() }));
         router.push('/dashboard');
       } else {
         setError('Backend server unreachable. Using fallback demo credentials.');
@@ -71,7 +71,7 @@ export default function LoginPage() {
             <Shield className="w-6 h-6 animate-pulse" />
           </Link>
           <h1 className="text-2xl font-black text-white tracking-wider uppercase">
-            Sentinel<span className="text-blue-500">AI</span>
+            Vigi<span className="text-blue-500">Locus</span>
           </h1>
           <p className="text-xs text-slate-400">
             Coram-Grade Security Operations Portal

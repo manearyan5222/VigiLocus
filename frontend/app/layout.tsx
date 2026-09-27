@@ -15,7 +15,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: 'SentinelAI — Autonomous AI Agents for Physical Security & Camera Triage',
+  title: 'VigiLocus — Autonomous AI Agents for Physical Security & Camera Triage',
   description: 'AI-powered security platform that automates multi-camera monitoring, 5-second alert triage, threat explanation, and guard dispatch.',
 };
 

@@ -17,7 +17,7 @@ export function useAlertWebSocket(onNewAlert?: (alert: Alert) => void, onDetecti
     const connectWS = () => {
       try {
         const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-        const token = typeof window !== 'undefined' ? (localStorage.getItem('sentinel_token') || localStorage.getItem('token') || '') : '';
+        const token = typeof window !== 'undefined' ? (localStorage.getItem('vigilocus_token') || localStorage.getItem('token') || '') : '';
         const queryParam = token ? `?token=${encodeURIComponent(token)}` : '';
         const wsUrl = `${protocol}//${window.location.hostname}:8000/ws/alerts${queryParam}`;
         

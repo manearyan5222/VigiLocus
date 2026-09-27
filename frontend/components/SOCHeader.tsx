@@ -81,7 +81,7 @@ export function SOCHeader({ systemStatus, isConnected = true, activeAlertCount =
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="font-black text-base tracking-wider text-slate-100 uppercase">
-                  Sentinel<span className="text-blue-500">AI</span>
+                  Vigi<span className="text-blue-500">Locus</span>
                 </h1>
                 <span className="text-[9px] px-1.5 py-0.5 rounded font-mono bg-blue-950 text-blue-300 border border-blue-800 tracking-wider">
                   SOC v1.0

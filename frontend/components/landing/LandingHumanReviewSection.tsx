@@ -28,7 +28,7 @@ export function LandingHumanReviewSection() {
             <span className="text-emerald-400 font-extrabold">Humans decide.</span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            SentinelAI is an assistance layer, not an autonomous judge. It never determines guilt. AI prioritizes elevated risk events so human guards can make informed decisions in seconds.
+            VigiLocus is an assistance layer, not an autonomous judge. It never determines guilt. AI prioritizes elevated risk events so human guards can make informed decisions in seconds.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export function LandingHumanReviewSection() {
           <div className="flex items-center gap-3">
             <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
             <span className="text-slate-300 leading-relaxed">
-              <strong>SentinelAI Core Guarantee:</strong> Zero autonomous law-enforcement dispatch. All alerts require human verification.
+              <strong>VigiLocus Core Guarantee:</strong> Zero autonomous law-enforcement dispatch. All alerts require human verification.
             </span>
           </div>
           <span className="px-3 py-1 bg-[#0a0d14] rounded-lg border border-white/10 text-blue-400 font-semibold whitespace-nowrap">

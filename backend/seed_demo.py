@@ -42,7 +42,7 @@ def seed():
             User(
                 id="usr-admin",
                 username="admin",
-                email="admin@sentinelai.local",
+                email="admin@vigilocus.local",
                 hashed_password=hash_password("admin123"),
                 full_name="Chief Security Officer",
                 role="ADMIN",
@@ -52,7 +52,7 @@ def seed():
             User(
                 id="usr-supervisor",
                 username="supervisor",
-                email="supervisor@sentinelai.local",
+                email="supervisor@vigilocus.ai",
                 hashed_password=hash_password("supervisor123"),
                 full_name="Elena Vance",
                 role="SUPERVISOR",
@@ -62,7 +62,7 @@ def seed():
             User(
                 id="usr-guard1",
                 username="guard",
-                email="guard@sentinelai.local",
+                email="guard@vigilocus.ai",
                 hashed_password=hash_password("guard123"),
                 full_name="Officer Marcus Cole",
                 role="GUARD",
@@ -388,7 +388,7 @@ def seed():
                 username="admin",
                 action="SYSTEM_STARTUP",
                 resource_type="SYSTEM",
-                details={"version": "1.0.0", "engine": "SentinelAI Core"}
+                details={"version": "1.0.0", "engine": "VigiLocus Core"}
             ),
             AuditLog(
                 id=f"aud-{uuid.uuid4().hex[:8]}",

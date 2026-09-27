@@ -1,6 +1,6 @@
-# SentinelAI — System Architecture & Technical Specifications
+# VigiLocus — System Architecture & Technical Specifications
 
-SentinelAI is an AI-powered CCTV security awareness and incident intelligence platform designed to convert continuous camera video feeds into explainable, prioritized security alerts for human security operations personnel.
+VigiLocus is an AI-powered CCTV security awareness and incident intelligence platform designed to convert continuous camera video feeds into explainable, prioritized security alerts for human security operations personnel.
 
 ---
 

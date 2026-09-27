@@ -25,7 +25,7 @@ export function LandingDashboardShowcase() {
             </span>
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            From multi-stream live monitoring to pre-registered visitor access passes and incident analytics, SentinelAI provides a unified SOC workspace.
+            From multi-stream live monitoring to pre-registered visitor access passes and incident analytics, VigiLocus provides a unified SOC workspace.
           </p>
         </div>
 

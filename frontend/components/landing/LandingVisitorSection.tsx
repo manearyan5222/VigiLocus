@@ -21,7 +21,7 @@ export function LandingVisitorSection() {
               <span className="text-blue-400">Zero false intruder flags.</span>
             </h2>
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-              Residents pre-register guests, contractors, and delivery drivers in seconds. When expected visitors arrive at the main gate, SentinelAI cross-references their unit clearance pass to avoid unnecessary guard dispatch.
+              Residents pre-register guests, contractors, and delivery drivers in seconds. When expected visitors arrive at the main gate, VigiLocus cross-references their unit clearance pass to avoid unnecessary guard dispatch.
             </p>
 
             <div className="space-y-3 font-mono text-xs text-slate-300">

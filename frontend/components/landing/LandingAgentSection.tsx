@@ -84,7 +84,7 @@ export function LandingAgentSection() {
           </h2>
 
           <p className="text-base sm:text-lg text-slate-300">
-            SentinelAI replaces manual camera scrubbing with specialized autonomous AI agents working in unison.
+            VigiLocus replaces manual camera scrubbing with specialized autonomous AI agents working in unison.
           </p>
         </div>
 

@@ -16,9 +16,9 @@ class PersonDetector:
             device = 'cuda' if device_manager.has_cuda else 'cpu'
             self.model.to(device)
             self.is_yolo_loaded = True
-            print(f"[SentinelAI Detector] YOLOv8 loaded successfully on {device.upper()}")
+            print(f"[VigiLocus Detector] YOLOv8 loaded successfully on {device.upper()}")
         except Exception as e:
-            print(f"[SentinelAI Detector] YOLO loading notice ({e}). Using OpenCV HOG/mobile detector fallback.")
+            print(f"[VigiLocus Detector] YOLO loading notice ({e}). Using OpenCV HOG/mobile detector fallback.")
             self.is_yolo_loaded = False
             self.hog = cv2.HOGDescriptor()
             self.hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())

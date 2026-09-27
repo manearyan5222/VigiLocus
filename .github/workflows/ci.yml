@@ -1,4 +1,4 @@
-name: SentinelAI CI
+name: VigiLocus CI
 
 on:
   push:

@@ -72,7 +72,7 @@ def test_websocket_valid_token():
     try:
         user = db.query(User).first()
         if not user:
-            user = User(id="usr-test-ws", username="test_guard", email="guard@sentinel.ai", hashed_password="x", role="GUARD", is_active=True)
+            user = User(id="usr-test-ws", username="test_guard", email="guard@vigilocus.ai", full_name="Test Guard", hashed_password="x", role="GUARD", is_active=True)
             db.add(user)
             db.commit()
             db.refresh(user)

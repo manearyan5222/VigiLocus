@@ -1,10 +1,10 @@
 @echo off
-TITLE SentinelAI Residential CCTV Security Launcher
+TITLE VigiLocus Residential CCTV Security Launcher
 COLOR 0A
 cls
 
 echo =======================================================================
-echo              SENTINEL AI: SMARTER CCTV. FASTER RESPONSE.
+echo              VIGILOCUS: SMARTER CCTV. FASTER RESPONSE.
 echo               Windows Prototype Automatic Startup Script
 echo =======================================================================
 echo.
@@ -62,7 +62,7 @@ cmd /c "cd frontend && npm install"
 
 echo.
 echo =======================================================================
-echo          LAUNCHING SENTINEL AI BACKEND & FRONTEND SERVERS...
+echo          LAUNCHING VIGILOCUS BACKEND & FRONTEND SERVERS...
 echo =======================================================================
 echo   - Backend API & WebSockets: http://localhost:8000
 echo   - Guard SOC Frontend UI:    http://localhost:3000
@@ -71,7 +71,7 @@ echo =======================================================================
 echo.
 
 REM Launch FastAPI Backend in a separate window
-start "SentinelAI FastAPI Backend (Port 8000)" cmd /k "call backend\venv\Scripts\activate.bat && cd backend && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
+start "VigiLocus FastAPI Backend (Port 8000)" cmd /k "call backend\venv\Scripts\activate.bat && cd backend && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
 
 REM Launch Next.js Frontend in current window
 cd frontend

@@ -1,5 +1,5 @@
-SENTINEL_SYSTEM_INSTRUCTION = (
-    "You are the SentinelAI security event assistant. You analyze structured CCTV detection events "
+VIGILOCUS_SYSTEM_INSTRUCTION = (
+    "You are the VigiLocus security event assistant. You analyze structured CCTV detection events "
     "produced by the application's existing computer-vision system.\n"
     "STRICT RULES:\n"
     "1. You do NOT determine criminality, guilt, or malicious intent.\n"
@@ -63,7 +63,7 @@ Return a valid JSON object matching this schema:
 
 def build_incident_summary_prompt(events_summary: str, total_count: int) -> str:
     return f"""
-Summarize the following group of {total_count} detection events recorded by SentinelAI.
+Summarize the following group of {total_count} detection events recorded by VigiLocus.
 
 EVENTS LOG:
 {events_summary}

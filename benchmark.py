@@ -13,7 +13,7 @@ from app.ai.zone_engine import zone_engine
 
 def run_benchmark(num_frames: int = 150):
     print("=" * 60)
-    print("        SENTINEL AI — PERFORMANCE BENCHMARK SUITE")
+    print("        VIGILOCUS — PERFORMANCE BENCHMARK SUITE")
     print("=" * 60)
     print(f"Executing CV Pipeline benchmark across {num_frames} frames...\n")
 

@@ -18,7 +18,7 @@ export function LandingFooter() {
                 <Shield className="w-5 h-5 text-blue-400" />
               </div>
               <span className="font-extrabold text-lg tracking-wide text-white">
-                Sentinel<span className="text-blue-500">AI</span>
+                Vigi<span className="text-blue-500">Locus</span>
               </span>
             </Link>
             <p className="text-slate-400 leading-relaxed max-w-sm text-xs">
@@ -60,7 +60,7 @@ export function LandingFooter() {
         </div>
 
         <div className="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-slate-400">
-          <p>© {new Date().getFullYear()} SentinelAI. Intelligent Security Awareness.</p>
+          <p>© {new Date().getFullYear()} VigiLocus. Intelligent Security Awareness.</p>
           <p>Human-in-the-Loop Security & Triage Decision Platform.</p>
         </div>
 

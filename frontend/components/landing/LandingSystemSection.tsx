@@ -27,7 +27,7 @@ export function LandingSystemSection() {
             <span className="text-blue-400">and zero container overhead.</span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-            SentinelAI runs natively on Windows 10/11 with zero Docker overhead. Automatically detects NVIDIA CUDA GPUs with CPU fallback.
+            VigiLocus runs natively on Windows 10/11 with zero Docker overhead. Automatically detects NVIDIA CUDA GPUs with CPU fallback.
           </p>
         </div>
 

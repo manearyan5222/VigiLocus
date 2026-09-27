@@ -22,7 +22,7 @@ export default function SignUpPage() {
     setTimeout(() => {
       setIsLoading(false);
       setIsSuccess(true);
-      localStorage.setItem('sentinel_user', JSON.stringify({ username: fullName || email.split('@')[0], role, orgName }));
+      localStorage.setItem('vigilocus_user', JSON.stringify({ username: fullName || email.split('@')[0], role, orgName }));
       setTimeout(() => {
         router.push('/dashboard');
       }, 1200);
@@ -44,7 +44,7 @@ export default function SignUpPage() {
             <Shield className="w-6 h-6 animate-pulse" />
           </Link>
           <h1 className="text-2xl font-black text-white tracking-wider uppercase">
-            Sentinel<span className="text-blue-500">AI</span>
+            Vigi<span className="text-blue-500">Locus</span>
           </h1>
           <p className="text-xs text-slate-400">
             Deploy Coram-Grade AI Vision Security
