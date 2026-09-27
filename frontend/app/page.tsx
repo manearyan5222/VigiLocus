@@ -3,6 +3,7 @@
 import React from 'react';
 import { LandingNavbar } from '../components/landing/LandingNavbar';
 import { LandingHero } from '../components/landing/LandingHero';
+import { LandingAgentSection } from '../components/landing/LandingAgentSection';
 import { LandingSeeSection } from '../components/landing/LandingSeeSection';
 import { LandingDetectSection } from '../components/landing/LandingDetectSection';
 import { LandingRiskSection } from '../components/landing/LandingRiskSection';
@@ -24,6 +25,9 @@ export default function SentinelLandingPage() {
 
       {/* 2. Cinematic Hero Section with Product Visualizer */}
       <LandingHero />
+
+      {/* 2.5 Autonomous Security Agent Capabilities (Vestris.ai Style) */}
+      <LandingAgentSection />
 
       {/* 3. Section 1: SEE - CCTV Multi-Stream Vision */}
       <LandingSeeSection />

@@ -1,52 +1,82 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Sparkles } from 'lucide-react';
+import { ArrowRight, Shield, Play, CheckCircle2 } from 'lucide-react';
 
 export function LandingCTASection() {
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) setSubmitted(true);
+  };
+
   return (
-    <section className="py-28 md:py-40 bg-[#07090e] border-t border-white/[0.06] relative overflow-hidden">
+    <section className="py-24 md:py-36 bg-[#080c14] border-t border-white/10 relative overflow-hidden text-slate-100">
       
-      {/* Soft Ambient Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-[350px] bg-gradient-to-r from-blue-600/10 via-indigo-600/5 to-transparent blur-3xl pointer-events-none" />
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
+        <div className="vestris-card p-10 sm:p-16 border border-white/10 bg-gradient-to-b from-[#131d16]/90 via-[#0d141e]/95 to-[#080c14] rounded-3xl shadow-2xl relative overflow-hidden">
+          
+          {/* Subtle Glow */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="max-w-4xl mx-auto px-6 sm:px-8 relative z-10 text-center space-y-8">
-        
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-white/10 text-slate-300 font-mono text-xs shadow-sm">
-          <Shield className="w-3.5 h-3.5 text-blue-400" />
-          <span>READY FOR DEPLOYMENT</span>
+          <div className="max-w-3xl space-y-6 text-left relative z-10">
+            
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950 border border-emerald-500/30 text-emerald-400 font-mono text-xs">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>READY FOR REAL ESTATE & ENTERPRISE SURVEILLANCE</span>
+            </div>
+
+            <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              Ready to deploy autonomous AI agents <br />
+              <span className="font-serif-italic text-emerald-300 text-4xl sm:text-6xl font-normal">
+                across your camera network?
+              </span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+              Connect your existing RTSP / IP feeds in minutes. Experience 85% faster triage and zero false alarm fatigue.
+            </p>
+
+            {/* Email Demo Request Form */}
+            {submitted ? (
+              <div className="p-4 bg-emerald-950/80 border border-emerald-500/40 rounded-2xl text-emerald-300 font-mono text-xs flex items-center gap-2 max-w-md">
+                <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                <span>Demo request received! Our SOC team will reach out shortly.</span>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-3 max-w-lg font-mono text-xs pt-2">
+                <input
+                  type="email"
+                  required
+                  placeholder="Enter work email..."
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-2xl text-white outline-none focus:border-emerald-500"
+                />
+                <button
+                  type="submit"
+                  className="w-full sm:w-auto px-6 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-2xl whitespace-nowrap transition-all shadow-lg shadow-emerald-500/20 active:scale-[0.98]"
+                >
+                  Request Demo
+                </button>
+              </form>
+            )}
+
+            <div className="pt-4 flex items-center gap-4 text-xs font-mono text-slate-400">
+              <Link href="/demo" className="text-blue-400 hover:text-blue-300 font-bold flex items-center gap-1.5">
+                <Play className="w-3.5 h-3.5 fill-blue-400" />
+                <span>Try Interactive Demo Instantly →</span>
+              </Link>
+            </div>
+
+          </div>
+
         </div>
-
-        <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
-          Make every camera <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-slate-200 bg-clip-text text-transparent">smarter.</span>
-        </h2>
-
-        <p className="text-slate-300 text-base sm:text-xl leading-relaxed max-w-2xl mx-auto">
-          Turn passive CCTV footage into actionable security awareness with real-time risk scoring, 5-second triage, and human-in-the-loop control.
-        </p>
-
-        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link
-            href="/dashboard"
-            className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl font-bold text-sm tracking-wide flex items-center justify-center gap-3 shadow-xl shadow-blue-600/20 transition-all hover:scale-[1.01] active:scale-[0.99]"
-          >
-            <span>Open Dashboard</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-
-          <a
-            href="https://github.com/manearyan5222/sentinel-ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 border border-white/10 text-slate-200 rounded-2xl font-semibold text-sm tracking-wide flex items-center justify-center gap-2 transition-colors"
-          >
-            <span>View Source on GitHub</span>
-          </a>
-        </div>
-
       </div>
     </section>
   );
 }
+
