@@ -37,13 +37,15 @@ class Settings:
     @property
     def ALLOWED_ORIGINS(self) -> List[str]:
         custom_origins = os.getenv("CORS_ORIGINS", "").strip()
-        if custom_origins:
-            return [o.strip() for o in custom_origins.split(",") if o.strip()]
-        return [
+        origins = [
+            "https://vigilocus-app-olive.vercel.app",
             "http://localhost:3000",
             "http://127.0.0.1:3000",
             "http://localhost:8000",
             "http://127.0.0.1:8000"
         ]
+        if custom_origins:
+            origins.extend([o.strip() for o in custom_origins.split(",") if o.strip()])
+        return origins
 
 settings = Settings()

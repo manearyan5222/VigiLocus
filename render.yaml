@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vigilocus-vnm8
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: PYTHONPATH=backend uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./vigilocus.db
+      - key: ENVIRONMENT
+        value: production
+      - key: DEMO_MODE
+        value: "true"
+      - key: CORS_ORIGINS
+        value: "https://vigilocus-app-olive.vercel.app,http://localhost:3000"

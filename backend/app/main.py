@@ -15,30 +15,19 @@ app = FastAPI(
     description="VigiLocus — AI-Powered CCTV Security Awareness & Incident Intelligence Platform."
 )
 
-# Configure CORS based on operational mode (SEC-L02)
-if settings.DEMO_MODE:
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=settings.ALLOWED_ORIGINS,
-        allow_origin_regex=r"^(http://localhost(:\d+)?|http://127\.0\.0\.1(:\d+)?|file://.*)$",
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
-else:
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=settings.ALLOWED_ORIGINS,
-        allow_credentials=True,
-        allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-        allow_headers=["Authorization", "Content-Type", "Accept"],
-    )
-
-
+# Configure CORS for Vercel production & local environments (SEC-L02)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origin_regex=r"^(https://.*\.vercel\.app|http://localhost(:\d+)?|http://127\.0\.0\.1(:\d+)?|file://.*)$",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Include Routers
 app.include_router(auth.router, prefix=settings.API_V1_STR, tags=["Authentication & RBAC"])
-app.include_router(cameras.router, prefix=settings.API_V1_STR, tags=["Cameras"])
+app.include_router(cameras.router, prefix=settings.API_V1_STR, tags=["Cameras & Feeds"])
 app.include_router(zones.router, prefix=settings.API_V1_STR, tags=["Spatial Zones"])
 app.include_router(alerts.router, prefix=settings.API_V1_STR, tags=["Alerts"])
 app.include_router(incidents.router, prefix=settings.API_V1_STR, tags=["Incidents & Timeline"])
@@ -52,8 +41,17 @@ app.include_router(websocket.router, tags=["WebSockets"])
 @app.get("/")
 def root():
     return {
-        "status": "online",
+        "status": "VigiLocus API Running",
         "system": settings.PROJECT_NAME,
         "version": settings.VERSION,
-        "docs": "/docs"
+        "docs": "/docs",
+        "health": "/health"
+    }
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy",
+        "system": settings.PROJECT_NAME,
+        "version": settings.VERSION
     }
