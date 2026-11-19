@@ -11,6 +11,8 @@ VIGILOCUS_SYSTEM_INSTRUCTION = (
     "7. Always return valid JSON adhering strictly to the requested JSON schema."
 )
 
+SENTINEL_SYSTEM_INSTRUCTION = VIGILOCUS_SYSTEM_INSTRUCTION
+
 def build_alert_explanation_prompt(alert_data: dict) -> str:
     return f"""
 Analyze the following structured CCTV security alert event and generate a human-in-the-loop decision support explanation.

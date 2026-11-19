@@ -32,10 +32,10 @@ export function LandingHero() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-white/10 text-slate-300 text-xs font-mono tracking-wide shadow-sm"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-red-500/30 text-slate-300 text-xs font-mono tracking-wide shadow-sm"
           >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>INTELLIGENT CCTV SECURITY LAYER</span>
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+            <span className="text-red-400 font-bold">VIGILOCUS :: AI THEFT PREVENTION & CCTV MONITORING</span>
           </motion.div>
         </div>
 
@@ -80,11 +80,11 @@ export function LandingHero() {
             </Link>
 
             <Link
-              href="/signup"
+              href="/dashboard"
               className="w-full sm:w-auto px-8 py-4 bg-slate-900/90 hover:bg-slate-800 border border-white/10 text-slate-200 rounded-xl font-mono font-semibold text-sm tracking-wide flex items-center justify-center gap-2 transition-colors hover:border-white/20"
             >
               <Shield className="w-4 h-4 text-blue-400" />
-              <span>Create Account / Sign Up</span>
+              <span>CCTV Live Dashboard</span>
             </Link>
           </motion.div>
         </div>

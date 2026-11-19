@@ -1,4 +1,4 @@
-# 🛡️ VigiLocus — CCTV Security Awareness & Incident Intelligence Platform
+# 🛡️ VigiLocus — Autonomous AI Agents for Physical Security & Camera Triage
 
 > **Transform raw CCTV video into explainable, contextual security intelligence that empowers human security teams to investigate incidents 10x faster.**
 

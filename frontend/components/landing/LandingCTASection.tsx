@@ -73,7 +73,6 @@ export function LandingCTASection() {
             </div>
 
           </div>
-
         </div>
       </div>
     </section>

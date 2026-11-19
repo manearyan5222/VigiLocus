@@ -71,7 +71,7 @@ export default function LoginPage() {
             <Shield className="w-6 h-6 animate-pulse" />
           </Link>
           <h1 className="text-2xl font-black text-white tracking-wider uppercase">
-            Vigi<span className="text-blue-500">Locus</span>
+            Vigi<span className="text-blue-500">Locus</span> SOC
           </h1>
           <p className="text-xs text-slate-400">
             Coram-Grade Security Operations Portal
